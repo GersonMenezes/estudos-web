@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/sakura.css@1.0.0/css/sakura.css">
+</head>
+<body>
+	<header>
+		<h1>Controle de Gastos</h1>
+
+		<form id="formulario">
+			<input type="texto" id="titulo" placeholder="Título">
+			<input type="number" step="0.1" id="valor" placeholder="Valor">  <!--- step permite numeros decimais --->
+			<button type="submit">Inserir</button>
+		</form>
+		<hr>
+		<table>
+			<thead>
+				<tr>
+					<td>Título</td>
+					<td>Valor</td>
+				</tr>
+			</thead>
+			<tbody id="listagem">
+				
+			</tbody>
+		</table>
+
+	</header>
+	<script src="script.js"></script>
+</body>
+</html>

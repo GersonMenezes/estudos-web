@@ -62,3 +62,15 @@ margin-right: 20px;
 .sidebar ul{
 	padding-left: 0;
 }
+
+.crescer{
+	transition: 0.5s ease all;
+	width: 100%;
+	min-height: 50px;
+}
+
+.crescer:hover{
+	transform: scaleZ(2,2); /* Ao passar o mouse*/
+	/*font-size: 2rem;*/
+	color: blue;
+}
