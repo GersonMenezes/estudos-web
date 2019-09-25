@@ -1,0 +1,64 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+header{
+	background-color: tomato;
+	color: white;
+	padding: 1rem 0;
+}
+
+.container{
+	max-width: 980px; /* Não esquecer do px*/
+	margin: 0 auto; /* centraliza conteudo*/
+	overflow: hidden;
+}
+
+header h1{ /*Espaço dia, h1 que está dentro de header*/
+	margin: 0; /* Margin propia do h1*/
+	display: inline-block;
+}
+
+.intro{
+	padding: 1rem 0;
+}
+
+.sidebar{
+	position: fixed; /* Posiciona elemento em um lugar fixo*/
+	top: 0;
+	left: 0;
+	background-color: blue;
+	width: 15%;
+	height: 100vh; /* Altura da tela */
+	transform: translateX(-100%); /* Esconde o sidebar */
+	transition: 200ms ease all;   
+}
+
+.sidebar.ativo{
+	transform: translateX(0);
+	opacity: 0.8;
+}
+
+.menu-button{
+float: right; /* Flutua para a direita */
+margin-right: 20px;
+}
+
+.sidebar li{
+	list-style: none; /* Bolinhas em cada linha*/ 
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.sidebar a{
+	color: white;
+}
+
+.sidebar ul{
+	padding-left: 0;
+}
